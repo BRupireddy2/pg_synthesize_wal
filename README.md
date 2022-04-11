@@ -14,7 +14,11 @@ Version 15 and above.
 
 Installation
 ============
-Easiest way to compile and install the code is to copy it as contrib/pg_synthesize_wal in PostgreSQL source code and use "make install" to compile and "make check" to run tests.
+Easiest way to use the extension's source code is to copy it as contrib/pg_synthesize_wal in PostgreSQL source code and run "make install" to compile and "make check" for tests.
+
+Usage
+=====
+Add pg_synthesize_wal to PostgreSQL's shared_preload_libraries either via postgresql.conf file or ALTER SYTEM SET command and restart the PostgreSQL database cluster i.e. restart the postmaster. Then, create the extension with CREATE EXTENSION pg_synthesize_wal; command and use its functions.
 
 Dependencies
 ============
