@@ -1,0 +1,7 @@
+# pg_synthesize_wal extension
+comment = 'module to generate PostgreSQL Write-Ahead Log records of various sizes'
+default_version = '1.0'
+module_pathname = '$libdir/pg_synthesize_wal'
+relocatable = true
+# pg_walinspect is required only for test purposes, pg_synthesize_wal doesn't use it internally
+requires = 'pg_walinspect'
